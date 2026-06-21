@@ -1,0 +1,12 @@
+{
+  "_comment": "最新Instagram投稿セクション。posts に投稿を並べると最大6件グリッド表示。permalink=投稿URL（必須）。image=サムネ画像パス(assets/ig/xxx.jpg 等。無ければブランド調プレースホルダー)。caption=任意の一言。『この投稿載せて』とURLを渡せばClaudeがここに追記します。完全自動の最新フィードにしたい場合は README『自動フィードに差し替え』を参照。",
+  "profile": "https://www.instagram.com/ragtime.coffee/",
+  "posts": [
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "野幌駅前マルシェ、出店しました" },
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "本日のおすすめ：ブルンジ レッドブルボン" },
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "ドリップパック、ギフトにも" },
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "焙煎したて、本日分" },
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "えべつ蔦屋書店さんにて" },
+    { "permalink": "https://www.instagram.com/ragtime.coffee/", "image": "", "caption": "2nd season はじまります" }
+  ]
+}

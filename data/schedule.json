@@ -1,0 +1,26 @@
+{
+  "_comment": "出店スケジュール。entries に1件ずつ追加すれば自動でサイトに反映されます。date は必須(YYYY-MM-DD)。place/address は言語ごとに ja/en/zh/ko を埋める(無ければ ja が使われます)。time と mapUrl は任意。過去の日付は自動で薄く表示され、未来の予定が優先表示されます。",
+  "entries": [
+    {
+      "date": "2026-06-28",
+      "place": { "ja": "野幌駅前マルシェ", "en": "Nopporo Station Marche", "zh": "野幌站前集市", "ko": "노포로역 앞 마르셰" },
+      "address": { "ja": "北海道江別市野幌町", "en": "Nopporo, Ebetsu, Hokkaido", "zh": "北海道江别市野幌町", "ko": "홋카이도 에베쓰시 노포로초" },
+      "time": "10:00 - 16:00",
+      "mapUrl": "https://maps.google.com/?q=野幌駅"
+    },
+    {
+      "date": "2026-07-05",
+      "place": { "ja": "えべつ蔦屋書店", "en": "Ebetsu Tsutaya Books", "zh": "江别茑屋书店", "ko": "에베쓰 츠타야 서점" },
+      "address": { "ja": "北海道江別市牧場町", "en": "Bokujo, Ebetsu, Hokkaido", "zh": "北海道江别市牧场町", "ko": "홋카이도 에베쓰시 보쿠조초" },
+      "time": "11:00 - 17:00",
+      "mapUrl": "https://maps.google.com/?q=えべつ蔦屋書店"
+    },
+    {
+      "date": "2026-07-12",
+      "place": { "ja": "札幌・大通すわろうマルシェ", "en": "Sapporo Odori Marche", "zh": "札幌大通集市", "ko": "삿포로 오도리 마르셰" },
+      "address": { "ja": "北海道札幌市中央区大通", "en": "Odori, Chuo-ku, Sapporo", "zh": "北海道札幌市中央区大通", "ko": "홋카이도 삿포로시 주오구 오도리" },
+      "time": "10:00 - 18:00",
+      "mapUrl": "https://maps.google.com/?q=札幌大通公園"
+    }
+  ]
+}
