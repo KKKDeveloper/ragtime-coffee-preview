@@ -193,7 +193,7 @@
           grid.innerHTML = '<div class="ig-empty">Instagram &nbsp;@ragtime.coffee</div>';
           return;
         }
-        posts.slice(0, 6).forEach(function (p) {
+        posts.slice(0, 6).forEach(function (p, i) {
           var a = document.createElement("a");
           a.className = "ig-tile";
           a.href = p.permalink || (json.profile || "https://www.instagram.com/ragtime.coffee/");
@@ -212,8 +212,11 @@
               a.appendChild(cap);
             }
           } else {
-            a.classList.add("is-placeholder");
-            a.innerHTML = IG_GLYPH;
+            /* 画像未設定: ブランド配色のテキストカード（仮ビジュアル） */
+            a.classList.add("is-placeholder", "ph-" + (i % 4));
+            a.innerHTML =
+              '<span class="ph-mark">' + IG_GLYPH + "</span>" +
+              '<span class="ph-cap">' + esc(p.caption || "@ragtime.coffee") + "</span>";
           }
           grid.appendChild(a);
         });
