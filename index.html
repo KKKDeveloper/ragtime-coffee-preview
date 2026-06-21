@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -54,14 +54,15 @@
   <!-- ===== Hero ===== -->
   <section class="hero" id="hero">
     <div class="hero-photo" aria-hidden="true"></div>
+    <span class="hero-side" aria-hidden="true">EBETSU · HOKKAIDO</span>
     <div class="hero-inner">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">北海道江別 — 自家焙煎</p>
+      <p class="hero-eyebrow anim" data-i18n="hero.eyebrow">北海道江別 — 自家焙煎</p>
       <h1 class="hero-title">
-        <span data-i18n="hero.title1">注文を受けてから、</span>
-        <span data-i18n="hero.title2">焙煎する一杯。</span>
+        <span class="line"><span class="line-in" data-i18n="hero.title1">注文を受けてから、</span></span>
+        <span class="line"><span class="line-in em" data-i18n="hero.title2">焙煎する一杯。</span></span>
       </h1>
-      <p class="hero-lead" data-i18n="hero.lead">まちを巡るキッチンカーと、淹れたての香り。RAGTIME COFFEE。</p>
-      <div class="hero-cta">
+      <p class="hero-lead anim" data-i18n="hero.lead">まちを巡るキッチンカーと、淹れたての香り。RAGTIME COFFEE。</p>
+      <div class="hero-cta anim">
         <a class="btn btn-accent" href="#schedule" data-i18n="hero.ctaSchedule">今週の出店を見る</a>
         <a class="btn btn-line" href="#menu" data-i18n="hero.ctaMenu">メニュー</a>
       </div>
@@ -71,10 +72,18 @@
     </a>
   </section>
 
+  <!-- ===== Marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>RAGTIME COFFEE&ensp;✦&ensp;自家焙煎&ensp;✦&ensp;ROASTED TO ORDER&ensp;✦&ensp;北海道江別&ensp;✦&ensp;KITCHEN CAR&ensp;✦&ensp;</span>
+      <span>RAGTIME COFFEE&ensp;✦&ensp;自家焙煎&ensp;✦&ensp;ROASTED TO ORDER&ensp;✦&ensp;北海道江別&ensp;✦&ensp;KITCHEN CAR&ensp;✦&ensp;</span>
+    </div>
+  </div>
+
   <!-- ===== About ===== -->
   <section class="section about" id="about">
     <div class="section-head reveal">
-      <p class="kicker" data-i18n="about.kicker">ABOUT</p>
+      <p class="kicker"><span class="kn">01</span><span data-i18n="about.kicker">ABOUT</span></p>
       <h2 data-i18n="about.title">江別の小さな焙煎所から</h2>
     </div>
     <div class="about-grid">
@@ -94,7 +103,7 @@
   <!-- ===== Craft / こだわり ===== -->
   <section class="section craft" id="craft">
     <div class="section-head reveal">
-      <p class="kicker" data-i18n="craft.kicker">CRAFT</p>
+      <p class="kicker"><span class="kn">02</span><span data-i18n="craft.kicker">CRAFT</span></p>
       <h2 data-i18n="craft.title">三つのこだわり</h2>
     </div>
     <div class="craft-grid">
@@ -119,7 +128,7 @@
   <!-- ===== Menu ===== -->
   <section class="section menu" id="menu">
     <div class="section-head reveal">
-      <p class="kicker" data-i18n="menu.kicker">MENU</p>
+      <p class="kicker"><span class="kn">03</span><span data-i18n="menu.kicker">MENU</span></p>
       <h2 data-i18n="menu.title">メニュー</h2>
       <p class="section-note" data-i18n="menu.note">※ 出店内容により取り扱いが変わります。価格は税込の目安です。</p>
     </div>
@@ -150,7 +159,7 @@
   <!-- ===== Schedule / 出店スケジュール (data-driven) ===== -->
   <section class="section schedule" id="schedule">
     <div class="section-head reveal">
-      <p class="kicker" data-i18n="schedule.kicker">SCHEDULE</p>
+      <p class="kicker"><span class="kn">04</span><span data-i18n="schedule.kicker">SCHEDULE</span></p>
       <h2 data-i18n="schedule.title">出店スケジュール</h2>
       <p class="section-note" data-i18n="schedule.note">天候などにより変更となる場合があります。最新情報は Instagram をご確認ください。</p>
     </div>
@@ -162,7 +171,7 @@
   <!-- ===== Instagram (data-driven) ===== -->
   <section class="section instagram" id="instagram">
     <div class="section-head reveal">
-      <p class="kicker" data-i18n="instagram.kicker">INSTAGRAM</p>
+      <p class="kicker"><span class="kn">05</span><span data-i18n="instagram.kicker">INSTAGRAM</span></p>
       <h2 data-i18n="instagram.title">最近の一台</h2>
       <p class="section-note" data-i18n="instagram.note">出店の様子や新作は Instagram でお知らせしています。</p>
     </div>
@@ -177,7 +186,7 @@
   <!-- ===== Contact / SNS ===== -->
   <section class="section contact" id="contact">
     <div class="contact-inner reveal">
-      <p class="kicker" data-i18n="contact.kicker">CONTACT</p>
+      <p class="kicker"><span class="kn">06</span><span data-i18n="contact.kicker">CONTACT</span></p>
       <h2 data-i18n="contact.title">出店のご依頼・お問い合わせ</h2>
       <p class="contact-lead" data-i18n="contact.lead">イベント・マルシェ・軒先への出店のご相談を承ります。お気軽にどうぞ。</p>
       <div class="contact-links">

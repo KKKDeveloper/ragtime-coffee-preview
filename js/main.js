@@ -67,6 +67,25 @@
     }
   }
 
+  /* ---------- hero parallax ---------- */
+  function initParallax() {
+    var photo = document.querySelector(".hero-photo");
+    if (!photo) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var ticking = false;
+    window.addEventListener("scroll", function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        var y = window.scrollY;
+        if (y < window.innerHeight) {
+          photo.style.transform = "translateY(" + (y * 0.18).toFixed(1) + "px) scale(1.05)";
+        }
+        ticking = false;
+      });
+    }, { passive: true });
+  }
+
   /* ---------- reveal on scroll ---------- */
   function initReveal() {
     var items = document.querySelectorAll(".reveal");
@@ -226,6 +245,7 @@
     if (y) y.textContent = new Date().getFullYear();
     initLang();
     initHeader();
+    initParallax();
     initReveal();
     loadSchedule();
     loadInstagram();
