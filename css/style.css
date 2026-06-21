@@ -27,8 +27,8 @@
   --line:   #e3d9c9;        /* 罫線 */
   --white:  #fcf8f1;
 
-  /* Latin見出し=Cormorant(優雅な高コントラストセリフ) / 和文見出し=Shippori Mincho(細め) */
-  --serif: "Cormorant Garamond", "Shippori Mincho", "Noto Sans JP", serif;
+  /* Latin見出し=Cormorant(優雅なセリフ) / 和文見出し=Zen Kaku Gothic New(モダンな日本語ゴシック) */
+  --serif: "Cormorant Garamond", "Zen Kaku Gothic New", "Noto Sans JP", serif;
   --sans:  "Noto Sans JP", system-ui, -apple-system, "Hiragino Sans", sans-serif;
 
   --wrap: 1120px;
@@ -49,11 +49,11 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.3; letter-spacing: .02em; }
 
-/* lang-specific: 和文・中韓の見出しは細めの明朝で上品に */
+/* lang-specific: 和文・中韓の見出しはモダンな日本語ゴシックで（中華風の明朝を避ける） */
 :lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
 :lang(zh) h1, :lang(zh) h2, :lang(zh) h3,
 :lang(ko) h1, :lang(ko) h2, :lang(ko) h3 {
-  font-family: "Shippori Mincho", "Noto Sans JP", serif; font-weight: 600;
+  font-family: "Zen Kaku Gothic New", "Noto Sans JP", sans-serif; font-weight: 500;
 }
 
 /* ---------- buttons ---------- */
@@ -155,7 +155,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.3; lett
 }
 .hero-title {
   font-size: clamp(2.4rem, 6.2vw, 4.8rem); line-height: 1.32;
-  letter-spacing: .045em; font-weight: 600;
+  letter-spacing: .045em; font-weight: 500;
 }
 /* 行ごとにクリップして下から立ち上げる */
 .hero-title .line { display: block; overflow: hidden; padding-bottom: .12em; }
